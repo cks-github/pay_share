@@ -22,7 +22,7 @@ LIBS   =-lm
 _DEPS = pay.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = main.o pay_init.o pay_print.o
+_OBJ = main.o pay_init.o pay_print.o config.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 

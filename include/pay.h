@@ -59,6 +59,12 @@ typedef struct person_data_ {
     int person_count;
 } person_data;
 
+/*
+ * Global externs
+ */
+extern const char *names[];
+extern transaction_configuration trans_config[];
+
 /* Functions */
 void init_transaction(transaction_data *trans_data);
 

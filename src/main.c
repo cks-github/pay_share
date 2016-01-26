@@ -8,26 +8,6 @@
 
 #include "pay.h"
 
-/*
- * Static configurations
- */
-static const char *names[] = {
-    "Charles",
-    "Cory",
-    "David",
-    "Daryl",
-    "Lydia",
-    NULL,
-};
-
-static transaction_configuration trans_config[] = {
-    { 50,  "pizza at the mall",  "Charles" },
-    { 50,  "uber downtown",      "Cory"    },
-    { 200, "cabin rental",       "David"   },
-    { 100, "equipment",          "Daryl"   },
-    { 0,   NULL                            },
-};
-
 
 
 /*
