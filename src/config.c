@@ -11,6 +11,10 @@
 /*
  * Global configurations
  */
+
+/*
+ * This list is used to add people to the pay group.
+ */
 const char *names[] = {
     "Charles",
     "Cory",
@@ -20,6 +24,10 @@ const char *names[] = {
     NULL,
 };
 
+/*
+ * This list is used to generate transaction scenarios 
+ * (mainly for testing)
+ */
 transaction_configuration trans_config[] = {
     { 50,  "pizza at the mall",  "Charles" },
     { 50,  "uber downtown",      "Cory"    },
