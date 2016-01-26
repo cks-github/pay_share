@@ -32,8 +32,15 @@ $(ODIR)/%.o: $(SRCDIR)/%.c $(DEPS)
 pay_share: $(OBJ)
 	gcc -o $@ $^ $(CFLAGS) $(LIBS)
 
+# Note, we are using order-only-prerequisites here to create obj dir and avoid
+# building all objs everytime
+$(OBJ): | $(ODIR)
+
+$(ODIR):
+	mkdir $(ODIR)
+
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+	rm -rf pay_share $(ODIR)/ *~ core $(INCDIR)/*~ 
 
