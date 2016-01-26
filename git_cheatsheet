@@ -1,0 +1,16 @@
+This is a cheatsheat for using git
+
+Check status of current workspace:
+$ git status
+
+Add a changed file to your change list
+$ git add <FILE>
+
+Commit changes to your local repo
+$ git commit -m "message"
+
+Push changes to master branch in cloude
+$ git push
+
+Pull latest changes and merge to your local repo
+$ git pull
